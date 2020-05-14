@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# jiajianfa-admin
-=======
 # jiajianfa-admin
 
 ## Project setup
