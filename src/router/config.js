@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/components/Login'
-// import Home from '@/views/home'
+import ArticleList from '@/views/articles'
+import ArticleInfo from '@/views/articleInfo'
 
 let Home = () => import('@/views/home')
 
@@ -19,6 +20,16 @@ export default new Router({
       path: '/index',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/articles',
+      name: 'ArticleList',
+      component: ArticleList
+    },
+    {
+      path: '/articles/:id',
+      name: 'ArticleInfo',
+      component: ArticleInfo
     }
   ]
 })

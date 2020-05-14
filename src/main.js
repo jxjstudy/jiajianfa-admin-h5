@@ -2,6 +2,8 @@ import Vue from 'vue';
 import App from './App.vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
 import Router from '@/router/config'
 import axios from 'axios'
 
@@ -9,6 +11,7 @@ axios.defaults.baseURL = 'http://localhost:8090/api'
 Vue.prototype.$axios= axios
 Vue.config.productionTip = false
 Vue.use(ElementUI);
+Vue.use(mavonEditor)
 
 /* eslint-disable no-new */
 new Vue({
